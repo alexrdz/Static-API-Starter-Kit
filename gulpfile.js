@@ -99,7 +99,7 @@ gulp.task('default', () => {
 
 // Add Page via Terminal
 gulp.task('page', () => {
-  const fileContent = '---\ntitle: Temp Title\nfescription: Temp Description\n---\n### Temp Title\nDonec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.';
+  const fileContent = '---\ntitle: Temp Title\ndescription: Temp Description\n---\n### Temp Title\nDonec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.';
   let path = process.argv[3].replace(/^-+/, "").replace(/ /g, '-');
   let file = path.substr(path.lastIndexOf('/') + 1); // find word after last /
   let dir = path.replace(file, '');
